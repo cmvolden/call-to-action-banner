@@ -1,8 +1,8 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.3;
 }
 
 *, *::before, *::after {
@@ -13,6 +13,14 @@ body {
   margin: 0;
 }
 
+.section {
+  display: flex;
+}
+
+.banner .img-flex {
+  margin: 0;
+}
+
 .img-flex {
   display: block;
   width: 100%;
@@ -20,19 +28,53 @@ body {
 }
 
 .mecha {
-  width: 25%;
+  position: absolute;
+  max-height: 200px;
+  top: 12px;
+  left: 10px;
 }
 
-.banner {
+.banner-text {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   position: absolute;
-  top: 10px;
+  top: 25px;
+  left: 280px;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 h2 {
-  flex-wrap: wrap;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 p {
   flex-wrap: wrap;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  border-color: #333;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  text-decoration: none;
+  color: #fff;
+  padding: .4em .75em .3em;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
 }
